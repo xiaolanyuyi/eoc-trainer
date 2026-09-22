@@ -198,3 +198,17 @@ powershell -File tools\publish.ps1
 - 仅供**单机**学习与个人使用；请勿在联机对战中影响他人体验。
 - 修改存档有风险，建议先备份：`文档\Larian Studios\Divinity Original Sin 2 Definitive Edition\PlayerProfiles\<配置>\Savegames`。
 - 本项目与 Larian Studios、Norbyte 均无隶属关系。
+
+### 在国内网络无法 `git push` 时
+
+有些网络会把 `github.com:443` 的 git 传输重置掉（网页和 API 正常）。这种情况可以用
+`tools\publish-via-api.ps1` 走 REST API 上传当前提交：
+
+```powershell
+$env:GH_TOKEN = '<带 repo 权限的 token>'
+powershell -File tools\publish-via-api.ps1 -Owner <用户名> -Repo <仓库名>
+```
+
+脚本会照 `git cat-file` 的原始字节上传每个文件，因此**远端文件与本地逐字节一致**
+（tree SHA 相同）；只有提交对象本身的 SHA 可能不同，因为 GitHub 会去掉
+提交信息首尾的空白。
