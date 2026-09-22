@@ -5,6 +5,9 @@
 针对《神界：原罪 2 决定版》(Divinity: Original Sin 2 - Definitive Edition) 的**运行时数值修改器**：
 游戏跑着就能精确设置 / 增减队伍角色的属性、能力、天赋、点数、金币等，改完立刻生效并写进存档。
 
+**[⬇ 下载最新版](https://github.com/xiaolanyuyi/eoc-trainer/releases/latest)** ·
+[使用说明](#安装与使用) · [常见问题](#常见问题) · [实现细节](docs/architecture.md)
+
 - **精确到游戏内部字段**：不是猜地址、不是覆盖显示，而是直接调用游戏自己的接口写入。
   例如把力量设为 15，游戏内部保存的就是 15。
 - **两种接入方式**：装一个小模组包，或者**完全不装模组**（通过 Script Extender 的控制台把桥接代码注入游戏）。
@@ -117,7 +120,8 @@
 
 ### 1. 运行修改器
 
-下载 Release 里的 `EocTrainer.exe` 双击运行（或从源码构建）。程序会自动从 Steam 库找到游戏目录；
+从 [Releases](https://github.com/xiaolanyuyi/eoc-trainer/releases/latest) 下载并双击运行
+（或从源码构建）。程序会自动从 Steam 库找到游戏目录；
 找不到时点「选择游戏目录…」手动指定 `Divinity Original Sin 2` 根目录。
 
 ### 2. 选择接入方式

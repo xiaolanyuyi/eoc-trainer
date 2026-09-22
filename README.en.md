@@ -6,6 +6,9 @@ A **runtime stat trainer** for *Divinity: Original Sin 2 - Definitive Edition*: 
 attributes, abilities, talents, unspent points and gold while the game is running. Changes apply
 immediately and are stored in the savegame.
 
+**[⬇ Download the latest release](https://github.com/xiaolanyuyi/eoc-trainer/releases/latest)** ·
+[Usage](#install--usage) · [Troubleshooting](#troubleshooting) · [Internals](docs/architecture.md)
+
 - **Exact writes, not guesswork** — it calls the game's own Osiris functions, so setting Strength
   to 15 stores 15 in the game's internal field. No memory scanning, no address hunting.
 - **Two ways to attach** — install a tiny mod package, or **install no mod at all** and let the app
@@ -131,8 +134,9 @@ The app checks this for you and shows `Script Extender：已就绪 (v60.0.0.0)` 
 
 ### 1. Start the trainer
 
-Run `EocTrainer.exe` from the release (or build it yourself). It locates the game through the Steam
-library folders; if it can't, use 「选择游戏目录…」 and point it at the `Divinity Original Sin 2` root.
+Download from [Releases](https://github.com/xiaolanyuyi/eoc-trainer/releases/latest) and run it (or
+build it yourself). It locates the game through the Steam library folders; if it can't, use
+「选择游戏目录…」 and point it at the `Divinity Original Sin 2` root.
 
 ### 2. Pick an attach mode
 
