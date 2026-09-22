@@ -344,6 +344,13 @@ class MockGame:
                 "MaxMp": entry["vitals"]["maxSource"],
             })
 
+            # Mirrors the real PlayerUpgrade layout: Attributes[1..6] in
+            # Strength, Finesse, Intelligence, Constitution, Memory, Wits order
+            # and Abilities[1] = WarriorLore (both verified in game).
+            attribute_array = [entry["attributes"][name] for name in ATTRIBUTES]
+            ability_array = [0] * 40
+            ability_array[0] = entry["abilities"].get("WarriorLore", 0)
+
             self.characters[guid] = self.to_lua({
                 "MyGuid": guid,
                 "IsPlayer": True,
@@ -351,6 +358,15 @@ class MockGame:
                 "Dead": entry["dead"],
                 "Stats": stats,
                 "PlayerCustomData": {"Name": entry["name"]},
+                "PlayerUpgrade": {
+                    "Attributes": attribute_array,
+                    "Abilities": ability_array,
+                    "AttributePoints": entry["points"]["attribute"],
+                    "CombatAbilityPoints": entry["points"]["combatAbility"],
+                    "CivilAbilityPoints": entry["points"]["civilAbility"],
+                    "TalentPoints": entry["points"]["talent"],
+                    "IsCustom": True,
+                },
             })
 
     def apply_calls(self):

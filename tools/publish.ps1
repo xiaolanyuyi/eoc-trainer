@@ -10,7 +10,7 @@ param(
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 $project = Join-Path $root "src\EocTrainer\EocTrainer.csproj"
-$output = Join-Path $root "dist"
+$output = if ($SelfContained) { Join-Path $root "dist\standalone" } else { Join-Path $root "dist" }
 
 if (Test-Path $output) { Remove-Item $output -Recurse -Force }
 
