@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>EocTrainer</RootNamespace>
+    <AssemblyName>EocTrainer</AssemblyName>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <EnableDefaultEmbeddedResourceItems>true</EnableDefaultEmbeddedResourceItems>
+  </PropertyGroup>
+
+  <!-- The Lua mod is the payload that gets deployed into the game. It is kept in
+       the repository root (mod/) and embedded here so the app stays self contained. -->
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\mod\OsiToolsConfig.json" LogicalName="mod.OsiToolsConfig.json" />
+    <EmbeddedResource Include="..\..\mod\meta.lsx" LogicalName="mod.meta.lsx" />
+    <EmbeddedResource Include="..\..\mod\Story\RawFiles\Lua\BootstrapServer.lua" LogicalName="mod.BootstrapServer.lua" />
+    <EmbeddedResource Include="..\..\mod\Story\RawFiles\Lua\Console.lua" LogicalName="mod.Console.lua" />
+    <EmbeddedResource Include="..\..\mod\Story\RawFiles\Lua\EocTrainer\*.lua" LogicalName="mod.EocTrainer.%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+    "RequiredExtensionVersion": 60,
+    "ModTable": "EocTrainer",
+    "FeatureFlags": [
+        "Lua",
+        "OsirisExtensions"
+    ]
+}

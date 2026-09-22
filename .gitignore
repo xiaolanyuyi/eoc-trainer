@@ -1,0 +1,16 @@
+# build output
+bin/
+obj/
+dist/
+
+# python tooling
+__pycache__/
+*.pyc
+
+# local editor state
+*.csproj.user
+.vs/
+
+# the trainer writes these into the game's user folder, never into the repo,
+# but keep them out of the way if someone copies a bridge directory here
+*.eoctrainer.bak

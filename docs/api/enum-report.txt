@@ -1,0 +1,15 @@
+source            : <Script Extender>/ScriptExtender/Misc/ExtIdeHelpers.lua
+stat sheet class  : --- @class CDivinityStatsCharacter:StatsObjectInstance
+attributes        : 6
+abilities         : 41 (enum 41, readable 41)
+talents           : 130 (enum 130, readable 130)
+
+ability enum entries without a readable stat field:
+  
+
+talent enum entries without a readable stat field:
+  
+
+abilities: AirSpecialist, Barter, Brewmaster, Charm, Crafting, DualWielding, EarthSpecialist, FireSpecialist, Intimidate, Leadership, Loremaster, Luck, MagicArmorMastery, Necromancy, PainReflection, Perseverance, Persuasion, PhysicalArmorMastery, Pickpocket, Polymorph, Ranged, RangerLore, Reason, Reflexes, Repair, RogueLore, Runecrafting, Sentinel, Shield, SingleHanded, Sneaking, Sourcery, Sulfurology, Summoning, Telekinesis, Thievery, TwoHanded, VitalityMastery, Wand, WarriorLore, WaterSpecialist
+
+talents: ActionPoints, ActionPoints2, AirSpells, Ambidextrous, AnimalEmpathy, AttackOfOpportunity, AvoidDetection, Awareness, Backstab, BeastMaster, Bully, Carry, ChanceToHitMelee, ChanceToHitRanged, Charm, Courageous, Criticals, Damage, DeathfogResistant, Demon, DualWieldingDodging, Durability, Dwarf_Sneaking, Dwarf_Sturdy, EarthSpells, ElementalAffinity, ElementalRanger, Elementalist, Elf_CorpseEating, Elf_Lore, Escapist, Executioner, ExpGain, ExtraSkillPoints, ExtraStatPoints, FaroutDude, FireSpells, FiveStarRestaurant, Flanking, FolkDancer, Gladiator, GoldenMage, GreedyVessel, Haymaker, Human_Civil, Human_Inventive, IceKing, IncreasedArmor, Indomitable, Initiative, Intimidate, InventoryAccess, ItemCreation, ItemMovement, Jitterbug, Kickstarter, Leech, LightStep, LightningRod, LivingArmor, Lizard_Persuasion, Lizard_Resistance, Lockpick, LoneWolf, Luck, MagicCycles, MasterThief, Max, Memory, MrKnowItAll, NaturalConductor, NoAttackOfOpportunity, None, PainDrinker, Perfectionist, Politician, Quest_GhostTree, Quest_Rooted, Quest_SpidersKiss_Int, Quest_SpidersKiss_Null, Quest_SpidersKiss_Per, Quest_SpidersKiss_Str, Quest_TradeSecrets, QuickStep, Rager, Raistlin, RangerLoreArrowRecover, RangerLoreEvasionBonus, RangerLoreRangedAPBonus, Reason, Repair, ResistDead, ResistFear, ResistKnockdown, ResistPoison, ResistSilence, ResistStun, ResurrectExtraHealth, ResurrectToFullHealth, RogueLoreDaggerAPBonus, RogueLoreDaggerBackStab, RogueLoreGrenadePrecision, RogueLoreHoldResistance, RogueLoreMovementBonus, Sadist, Scientist, Sight, Soulcatcher, Sourcerer, SpillNoBlood, StandYourGround, Stench, SurpriseAttack, Throwing, Torturer, Trade, Unstable, ViolentMagic, Vitality, WalkItOff, WandCharge, WarriorLoreGrenadeRange, WarriorLoreNaturalArmor, WarriorLoreNaturalHealth, WarriorLoreNaturalResistance, WaterSpells, WeatherProof, WhatARush, WildMag, Zombie
